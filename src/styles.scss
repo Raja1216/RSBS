@@ -1,0 +1,106 @@
+// /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+$grapes: #391e46 ;
+$link:#AFFAF9;
+$oliv:#3d9970;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+
+
+
+.text-grapes {
+  color: $grapes;
+}
+.bg-grapes {
+  background-color: $grapes;
+}
+
+.sidebar-dark{
+  background-color:$grapes !important ;
+}
+
+.btn-outline-primary{
+  color: $grapes;
+  border: 1px solid $grapes;
+  &:hover{
+    background-color: $grapes;
+    border-color:$grapes;
+  }
+}
+.nav-item{
+  &:hover{
+    color:$grapes!important;
+  }
+  .nav-link
+    :not(.active):hover{
+      color: $grapes;
+  }
+
+  .active{
+    background-color: $grapes !important ;
+  }
+}
+.nav-pills
+{
+  .nav-link{
+    i:not(.active):hover{
+      color: $grapes;
+    }
+  }
+  .nav-link:not(.active):hover{
+    color: $grapes;
+  }
+}
+.card{
+  .card-header{
+    background:none;
+    margin-bottom: 1rem;
+    border-bottom: 0;
+    .search_button{
+      border-top: 1px solid #ced4da;
+      border-bottom: 1px solid #ced4da;
+      border-right: 1px solid #ced4da;
+      // &:focus{
+      //   outline: none;
+      //   border: none;
+      // }
+      // &:active{
+      //   outline: none;
+      //   border: none;
+      // }
+    }
+  }
+  table{
+    border-top: 1px solid #dee2e6;
+    tr{
+      th{
+        border-bottom: 10px;
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.component-name{
+  color: $grapes;
+  font-weight: 600;
+  &:hover{
+    color: $grapes;
+  }
+}
+.list-group-item {
+  .active{
+    color:$oliv ;
+  }
+}
